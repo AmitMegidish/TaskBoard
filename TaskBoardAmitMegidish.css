@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  background-image: url("images/tile.jpg");
+}
+
+.heading-container {
+  width: 80%;
+  margin: 2% auto 3%;
+}
+
+#main-heading {
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.form-div {
+  height: 25%;
+  width: 42%;
+  margin: 0 auto;
+  overflow: auto;
+  background-image: url("images/formbg.jpg");
+  background-repeat: repeat;
+}
+
+.task-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#task-description-container {
+  width: 82%;
+  margin: 0.5% 5% auto;
+}
+
+#task-description {
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 4%;
+  line-height: 1.95;
+  resize: none;
+  border: none;
+  outline: none;
+  background: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#other-inputs {
+  height: 18%;
+  width: 95%;
+  margin-top: 5.4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#clear-button {
+  margin-top: -0.8%;
+}
+
+#add-task-button {
+  margin-top: -0.8%;
+}
+
+.due {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#notes-container {
+  margin: 2% auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.note-design {
+  height: 300px;
+  width: 225px;
+  margin: 2% 2% 2% 2.5%;
+  background-image: url("images/notebg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: note-apperance;
+  animation-duration: 1.5s;
+}
+
+.note-text {
+  height: 210px;
+  width: 190px;
+  margin: 15% auto 0 5%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.note-date {
+  height: 20px;
+  width: 190px;
+  margin: 0 auto 0 5%;
+  font-weight: bold;
+}
+
+.note-time {
+  height: 20px;
+  width: 190px;
+  margin: 0 auto 0 5%;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+#empty-fields-alert {
+  width: 36%;
+  display: none;
+  margin: 1% auto 0 auto;
+  text-align: center;
+}
+
+@keyframes emptyAlert {
+  0% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes note-apperance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 990px) {
+  .form-div {
+    width: 68%;
+  }
+
+  #task-description-container {
+    width: 60%;
+  }
+
+  #task-description {
+    width: 100%;
+    line-height: 2.2;
+  }
+
+  #empty-fields-alert {
+    width: 54%;
+  }
+
+  #notes-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 535px) {
+  #main-heading {
+    font-size: 45px;
+  }
+
+  .form-div {
+    width: 80%;
+  }
+
+  #empty-fields-alert {
+    width: 80%;
+  }
+}

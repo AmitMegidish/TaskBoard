@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TaskBoardAmitMegidish.css">
+    <title>Amit's Task Board</title>
+</head>
+
+<body>
+
+    <!-- Heading's div -->
+    <div class="heading-container">
+        <h1 id="main-heading">My Task board</h1>
+    </div>
+
+    <!-- Form's div -->
+    <div class="form-div">
+        <form class="task-form">
+            <div id="task-description-container">
+                <textarea placeholder="Task Description..." cols="68" rows="3" id="task-description"></textarea>
+            </div>
+            <div id="other-inputs">
+                <input type="date" class="due" id="due-date">
+                <input type="time" class="due" id="due-time">
+                <button type="button" class="btn btn-success btn-sm" id="add-task-button">Add Task</button>
+                <button type="button" class="btn btn-danger btn-sm" id="clear-button">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- A div which acts as an alert (Bootstrap). -->
+    <div class="alert alert-danger" role="alert" id="empty-fields-alert">
+        Please fill out Task Description section and set a Due-Date!
+    </div>
+
+    <!-- Location for notes to be added -->
+    <div class="container" id="notes-container"></div>
+
+    <script src="https://kit.fontawesome.com/747045262e.js" crossorigin="anonymous"></script>
+    <script src="TaskBoardAmitMegidish.js"></script>
+</body>
+
+</html>
